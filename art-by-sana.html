@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Art by Sana | Handmade Paintings, Calligraphy &amp; Resin Art in Pakistan</title>
+<meta name="description" content="Art by Sana: buy handmade paintings, Urdu calligraphy, resin art and custom wall art online in Pakistan. Cash on delivery across Lahore, Karachi and Islamabad.">
+<meta name="keywords" content="handmade art Pakistan, buy paintings online Pakistan, Urdu calligraphy, resin art, custom wall art, Art by Sana">
+<meta property="og:title" content="Art by Sana | Handmade Art Online in Pakistan">
+<meta property="og:description" content="Original paintings, calligraphy and resin art made by hand and delivered across Pakistan.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Art by Sana","description":"Handmade paintings, Urdu calligraphy and resin art in Pakistan","areaServed":"PK","priceRange":"Rs 1,500 - Rs 25,000"}</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500;700&family=Fraunces:wght@500;700&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0f4c4a;--plum:#8a2b4f;--gold:#e8a33d;--bg:#faf7fb;--ink:#23202b;--mute:#6b6575;--line:#e6dfe9}
+@media(prefers-color-scheme:dark){:root{--bg:#17141c;--ink:#f1ecf4;--mute:#a79fb0;--line:#332d3b}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:16px/1.65 'Hanken Grotesk',sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:Fraunces,serif;line-height:1.2}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;max-width:1100px;margin:auto;flex-wrap:wrap}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo .by{font:italic 500 18px Fraunces,serif;color:var(--mute)}
+.logo .ur{font:700 34px/1.6 'Noto Nastaliq Urdu',serif;color:var(--plum)}
+.logo .dot{width:10px;height:10px;border-radius:50%;background:var(--gold)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:8px 14px;border-radius:99px;text-decoration:none;font-weight:500;font-size:15px}
+nav a.on,nav a:hover{background:var(--teal);color:#fff}
+.cartbtn{background:var(--plum);color:#fff;border:0;border-radius:99px;padding:9px 16px;font:700 14px inherit;cursor:pointer}
+.page{display:none}.page.on{display:block}
+.hero{background:var(--teal);color:#fff;padding:72px 0;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(34px,5vw,56px);margin-bottom:16px}
+.hero p{max-width:46ch;opacity:.9;margin-bottom:24px}
+.hero .big{font:700 clamp(120px,18vw,220px)/1.5 'Noto Nastaliq Urdu',serif;color:var(--gold);text-align:center;direction:rtl}
+.btn{display:inline-block;background:var(--gold);color:#23202b;padding:12px 24px;border-radius:99px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:15px}
+.btn.alt{background:transparent;border:2px solid currentColor;color:inherit;margin-left:8px}
+section{padding:56px 0}
+.ttl{font-size:clamp(26px,3.5vw,38px);margin-bottom:8px}
+.sub{color:var(--mute);margin-bottom:28px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg)}
+.art{aspect-ratio:1/1;display:grid;place-items:center;font:700 54px 'Noto Nastaliq Urdu',serif;color:rgba(255,255,255,.9)}
+.card .in{padding:14px 16px 18px}
+.card h3{font-size:18px;margin-bottom:2px}
+.card small{color:var(--mute)}
+.price{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-weight:700}
+.add{background:var(--teal);color:#fff;border:0;border-radius:8px;padding:8px 12px;cursor:pointer;font-weight:700}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.chip{border:1px solid var(--line);background:none;color:inherit;border-radius:99px;padding:7px 16px;cursor:pointer;font:500 14px inherit}
+.chip.on{background:var(--plum);color:#fff;border-color:var(--plum)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.band{background:var(--plum);color:#fff}
+.band .sub{color:#f1d9e3}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.gal .art{aspect-ratio:4/5;border-radius:14px;font-size:44px;text-align:center;padding:16px}
+form{display:grid;gap:14px;max-width:520px}
+input,textarea,select{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:inherit;width:100%}
+.prose p{margin-bottom:14px;max-width:68ch}
+#drawer{position:fixed;inset:0 0 0 auto;width:min(380px,100%);background:var(--bg);border-left:1px solid var(--line);padding:20px;transform:translateX(100%);transition:transform .25s;z-index:9;overflow:auto}
+#drawer.open{transform:none}
+.row{display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}
+footer{background:var(--teal);color:#d8ecea;padding:36px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.hero .big{order:-1}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="bar">
+  <a href="#home" class="logo" aria-label="Art by Sana home"><span class="dot"></span><span class="by">art by</span><span class="ur">ثناء</span></a>
+  <nav aria-label="Main">
+   <a href="#home">Home</a><a href="#shop">Shop</a><a href="#art">Art</a><a href="#about">About Us</a><a href="#contact">Contact Us</a>
+  </nav>
+  <button class="cartbtn" onclick="toggleCart()" aria-label="Open cart">Cart (<span id="cc">0</span>)</button>
+ </div>
+</header>
+<main>
+
+<!-- HOME -->
+<div class="page" id="p-home">
+ <div class="hero"><div class="wrap">
+  <div>
+   <h1>Handmade art for the walls you love</h1>
+   <p>Original paintings, Urdu calligraphy and resin art by Sana. Every piece is made to order and delivered across Pakistan with cash on delivery.</p>
+   <a class="btn" href="#shop">Shop artworks</a><a class="btn alt" href="#contact">Order custom art</a>
+  </div>
+  <div class="big" aria-hidden="true">ثناء</div>
+ </div></div>
+ <section><div class="wrap">
+  <h2 class="ttl">Popular this month</h2>
+  <p class="sub">Our most ordered pieces. Each one is signed and packed in protective wrapping.</p>
+  <div class="grid" id="featured"></div>
+ </div></section>
+ <section class="band"><div class="wrap cols">
+  <div><h3>Made by hand</h3><p>No prints, no shortcuts. Acrylic, oil and epoxy resin applied by the artist.</p></div>
+  <div><h3>Delivered across Pakistan</h3><p>Lahore, Karachi, Islamabad and every city in between. Pay when it arrives.</p></div>
+  <div><h3>Custom commissions</h3><p>Send us your wall size and colours. We will paint your idea, names and Urdu verses included.</p></div>
+ </div></section>
+ <section><div class="wrap prose">
+  <h2 class="ttl">Buy handmade paintings online in Pakistan</h2>
+  <p>Art by Sana is a Pakistani art studio for people who want something original on their walls. We make abstract paintings, Urdu calligraphy, Quranic art, resin clocks, coasters and custom portraits.</p>
+  <p>Whether you are decorating a living room, gifting a wedding present or looking for Islamic wall art for your home, you can order online, track your parcel and pay on delivery.</p>
+ </div></section>
+</div>
+
+<!-- SHOP -->
+<div class="page" id="p-shop">
+ <section><div class="wrap">
+  <h1 class="ttl">Shop handmade art</h1>
+  <p class="sub">Paintings, calligraphy, resin pieces and gifts. Prices are in Pakistani rupees and include packaging.</p>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="shopgrid"></div>
+ </div></section>
+</div>
+
+<!-- ART -->
+<div class="page" id="p-art">
+ <section><div class="wrap">
+  <h1 class="ttl">The art gallery</h1>
+  <p class="sub">A look at finished work and the styles we paint most. Want something similar? Tell us your size and colours.</p>
+  <div class="gal" id="gal"></div>
+  <div style="margin-top:32px"><a class="btn" href="#contact">Request a custom piece</a></div>
+ </div></section>
+</div>
+
+<!-- ABOUT -->
+<div class="page" id="p-about">
+ <section><div class="wrap prose">
+  <h1 class="ttl">About Art by Sana</h1>
+  <p class="sub">A small Pakistani studio making art you can live with.</p>
+  <p>Art by Sana began with one canvas and a love for Urdu script. Today the studio makes paintings, calligraphy and resin art for homes, offices and gifts across Pakistan.</p>
+  <p>Every order is painted after it is placed, so your piece is never a copy of someone else's. We use artist-grade acrylics, archival varnish and food-safe resin where needed.</p>
+ </div></section>
+ <section class="band"><div class="wrap">
+  <h2 class="ttl">Our Artist</h2>
+  <p class="sub">Meet the hands behind every piece.</p>
+  <div class="cols">
+   <div class="card" style="color:var(--ink)"><div class="art" style="background:linear-gradient(135deg,#8a2b4f,#e8a33d)">ثناء</div><div class="in"><h3>Sana</h3><small>Founder and lead artist</small><p style="margin-top:8px">Paints abstract work, calligraphy and custom portraits. Trained in fine arts and self-taught in resin.</p></div></div>
+   <div><h3>What we believe</h3><p style="margin-top:8px">Art should be affordable, honest about its materials and made with patience. If you do not love your piece, tell us and we will fix it.</p></div>
+  </div>
+ </div></section>
+</div>
+
+<!-- CONTACT -->
+<div class="page" id="p-contact">
+ <section><div class="wrap cols">
+  <div>
+   <h1 class="ttl">Contact Us</h1>
+   <p class="sub">Questions, custom orders or bulk gifting? Send a message and we reply within one working day.</p>
+   <p><b>WhatsApp:</b> +92 300 0000000</p>
+   <p><b>Email:</b> hello@artbysana.pk</p>
+   <p><b>Instagram:</b> @artbysana</p>
+   <p><b>Delivery:</b> All Pakistan, 3 to 5 working days</p>
+  </div>
+  <form onsubmit="sendMsg(event)">
+   <label>Name<input name="n" required></label>
+   <label>Phone<input name="p" required></label>
+   <label>What are you looking for?<select name="t"><option>Ready-made artwork</option><option>Custom painting</option><option>Urdu calligraphy</option><option>Resin art</option></select></label>
+   <label>Message<textarea name="m" rows="4"></textarea></label>
+   <button class="btn" type="submit">Send on WhatsApp</button>
+  </form>
+ </div></section>
+</div>
+</main>
+
+<aside id="drawer" aria-label="Cart">
+ <div class="row"><h2 style="font-size:22px">Your cart</h2><button class="chip" onclick="toggleCart()">Close</button></div>
+ <div id="items"></div>
+ <p style="margin:16px 0;font-weight:700" id="tot"></p>
+ <button class="btn" style="width:100%" onclick="checkout()">Order on WhatsApp</button>
+ <p class="sub" style="margin-top:10px;font-size:13px">Cash on delivery. We confirm your address by message.</p>
+</aside>
+
+<footer><div class="wrap">
+ <div><b>art by ثناء</b><br>Handmade art, delivered across Pakistan.</div>
+ <div><a href="#shop">Shop</a> &middot; <a href="#art">Art</a> &middot; <a href="#about">About Us</a> &middot; <a href="#contact">Contact Us</a></div>
+ <div>&copy; 2026 Art by Sana</div>
+</div></footer>
+
+<script>
+var WA="923000000000";
+var P=[
+{n:"Midnight Abstract",c:"Paintings",p:8500,g:"#0f4c4a,#8a2b4f",t:"ابسٹریکٹ"},
+{n:"Bismillah Calligraphy",c:"Calligraphy",p:6500,g:"#8a2b4f,#e8a33d",t:"بسم اللہ"},
+{n:"Ocean Resin Clock",c:"Resin Art",p:7200,g:"#0f4c4a,#5fb3b0",t:"گھڑی"},
+{n:"Ayatul Kursi Canvas",c:"Calligraphy",p:12000,g:"#23202b,#e8a33d",t:"آیت الکرسی"},
+{n:"Marigold Garden",c:"Paintings",p:9800,g:"#e8a33d,#8a2b4f",t:"پھول"},
+{n:"Resin Coaster Set",c:"Gifts",p:2500,g:"#5fb3b0,#8a2b4f",t:"کوسٹر"},
+{n:"Custom Name Frame",c:"Gifts",p:3500,g:"#8a2b4f,#23202b",t:"نام"},
+{n:"Family Portrait",c:"Paintings",p:15000,g:"#0f4c4a,#e8a33d",t:"پورٹریٹ"}];
+var cart=[],cat="All";
+function card(x,i){return '<div class="card"><div class="art" style="background:linear-gradient(135deg,'+x.g+')" role="img" aria-label="'+x.n+'">'+x.t+'</div><div class="in"><h3>'+x.n+'</h3><small>'+x.c+'</small><div class="price"><span>Rs '+x.p.toLocaleString()+'</span><button class="add" onclick="add('+i+')">Add</button></div></div></div>'}
+function shop(){var cs=["All"].concat([...new Set(P.map(x=>x.c))]);
+ chips.innerHTML=cs.map(c=>'<button class="chip'+(c==cat?' on':'')+'" onclick="cat=\''+c+'\';shop()">'+c+'</button>').join('');
+ shopgrid.innerHTML=P.map((x,i)=>cat=="All"||x.c==cat?card(x,i):'').join('')}
+featured.innerHTML=[0,1,2,3].map(i=>card(P[i],i)).join('');
+gal.innerHTML=P.concat(P.slice(0,4)).map((x,i)=>'<div class="art" role="img" aria-label="'+x.n+'" style="background:linear-gradient('+(i*40)+'deg,'+x.g+')">'+x.t+'</div>').join('');
+function add(i){var f=cart.find(x=>x.i==i);f?f.q++:cart.push({i:i,q:1});draw();drawer.classList.add('open')}
+function rm(i){cart=cart.filter(x=>x.i!=i);draw()}
+function draw(){var t=0,n=0;items.innerHTML=cart.map(x=>{t+=P[x.i].p*x.q;n+=x.q;return '<div class="row"><span>'+P[x.i].n+' x'+x.q+'</span><span>Rs '+(P[x.i].p*x.q).toLocaleString()+' <button class="chip" onclick="rm('+x.i+')" aria-label="Remove">x</button></span></div>'}).join('')||'<p class="sub">Your cart is empty. Add a piece from the shop.</p>';
+ cc.textContent=n;tot.textContent=n?'Total: Rs '+t.toLocaleString():''}
+function toggleCart(){drawer.classList.toggle('open')}
+function checkout(){if(!cart.length)return;var m="Hi Art by Sana, I want to order:%0A"+cart.map(x=>P[x.i].n+" x"+x.q).join("%0A");open("https://wa.me/"+WA+"?text="+m)}
+function sendMsg(e){e.preventDefault();var f=e.target,m="Name: "+f.n.value+"%0APhone: "+f.p.value+"%0AInterest: "+f.t.value+"%0A"+encodeURIComponent(f.m.value);open("https://wa.me/"+WA+"?text="+m)}
+var T={home:"Art by Sana | Handmade Paintings, Calligraphy & Resin Art in Pakistan",shop:"Shop Handmade Art Online | Art by Sana Pakistan",art:"Art Gallery: Paintings, Urdu Calligraphy & Resin | Art by Sana",about:"About Art by Sana | Our Artist & Story",contact:"Contact Art by Sana | Custom Orders in Pakistan"};
+function route(){var h=(location.hash||"#home").slice(1);if(!T[h])h="home";
+ document.querySelectorAll('.page').forEach(p=>p.classList.toggle('on',p.id=="p-"+h));
+ document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=="#"+h));
+ document.title=T[h];scrollTo(0,0);drawer.classList.remove('open')}
+addEventListener('hashchange',route);shop();draw();route();
+</script>
+</body>
+</html>
